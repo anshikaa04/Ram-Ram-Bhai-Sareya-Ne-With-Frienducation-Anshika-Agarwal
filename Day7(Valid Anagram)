@@ -1,0 +1,20 @@
+class Solution {
+public:
+    bool isAnagram(string s, string t) {
+        sort(t.begin(),t.end());
+        sort(s.begin(),s.end());
+        bool flag=true;
+            for(int i=0;i<max(t.length(),s.length());i++)
+            {
+                if(s[i]!=t[i])
+                {
+                    flag=false;
+                    break;
+                }
+                
+                    
+            }
+        return flag;
+        
+    }
+};
